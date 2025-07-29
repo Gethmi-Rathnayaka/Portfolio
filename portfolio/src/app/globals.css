@@ -9,7 +9,22 @@
 :root {
   --font-quantico: 'Quantico', sans-serif;
   --font-sans: var(--font-quantico);
-  --backgroundColor: #190733;
+  /* --backgroundColor: linear-gradient(
+  135deg,
+  #dbefff,
+  #799ede,
+  #6ba1fd,
+  #b2e4f2,
+  #c9e3f4
+); */
+--backgroundColor: linear-gradient(
+  135deg,
+  #0f0c29,
+  #302b63,
+  #24243e
+);
+
+
   --primaryColor: #3bccf8;
   --primarytTextColor: #e6e6e6;
 
@@ -36,5 +51,47 @@ body {
 html, body {
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+#hero-card {
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(4.6px);
+-webkit-backdrop-filter: blur(4.6px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+#hero-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import About from "@/pages/About";
 
 export default function Testsection() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -23,24 +24,26 @@ export default function Testsection() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="overflow-hidden">
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 1</h3>
-      </div>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 2</h3>
-      </div>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 3</h3>
-      </div>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 4</h3>
-      </div>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 5</h3>
-      </div>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <h3 className="uppercase">Section 6</h3>
+    <div>
+      <div ref={sectionRef} className="overflow-hidden">
+        <div className="h-screen w-screen flex justify-center items-center">
+          <About />
+        </div>
+        <div className="h-screen w-screen flex justify-center items-center">
+          <h3 className="uppercase">Section 2</h3>
+        </div>
+        <div className="h-screen w-screen flex justify-center items-center">
+          <h3 className="uppercase">Section 3</h3>
+        </div>
+        <div className="h-screen w-screen flex justify-center items-center">
+          <h3 className="uppercase">Section 4</h3>
+        </div>
+        <div className="h-screen w-screen flex justify-center items-center">
+          <h3 className="uppercase">Section 5</h3>
+        </div>
+        <div className="h-screen w-screen flex justify-center items-center">
+          <h3 className="uppercase">Section 6</h3>
+        </div>
       </div>
     </div>
   );
