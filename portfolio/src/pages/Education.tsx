@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Education() {
   return (
     <div>
-      <h1 className="text-4xl font-medium">Education</h1>
+      <h1 className="text-4xl font-medium mb-4">Education</h1>
       <div className="flex gap-3">
         {/* card 1 */}
         <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35">
