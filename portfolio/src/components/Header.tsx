@@ -24,7 +24,7 @@ function Navigation() {
           Projects
         </a>
       </li>
-      <li className="nav-li hover:text-white">
+      <li className="nav-li ">
         <a className="nav-link" href="#contact">
           Contact
         </a>
@@ -36,7 +36,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-blend-luminosity h-5 md:pt-2">
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-blend-luminosity px-4 py-3">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a

@@ -3,6 +3,11 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import About from "@/pages/About";
+import Education from "@/pages/Education";
+import Projects from "@/pages/Projects";
+import Skills from "@/pages/Skills";
+import Other from "@/pages/Other";
+import Contact from "@/pages/Contact";
 
 export default function Testsection() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -26,23 +31,23 @@ export default function Testsection() {
   return (
     <div>
       <div ref={sectionRef} className="overflow-hidden">
-        <div className="h-screen w-screen flex justify-center items-center">
+        <div className="h-screen flex justify-center items-center">
           <About />
         </div>
-        <div className="h-screen w-screen flex justify-center items-center">
-          <h3 className="uppercase">Section 2</h3>
+        <div className="h-screen flex justify-center items-center">
+          <Education />
         </div>
-        <div className="h-screen w-screen flex justify-center items-center">
-          <h3 className="uppercase">Section 3</h3>
+        <div className="h-screen flex justify-center items-center">
+          <Projects />
         </div>
-        <div className="h-screen w-screen flex justify-center items-center">
-          <h3 className="uppercase">Section 4</h3>
+        <div className="h-screen flex justify-center items-center">
+          <Skills />
         </div>
-        <div className="h-screen w-screen flex justify-center items-center">
-          <h3 className="uppercase">Section 5</h3>
+        <div className="h-screen flex justify-center items-center">
+          <Other />
         </div>
-        <div className="h-screen w-screen flex justify-center items-center">
-          <h3 className="uppercase">Section 6</h3>
+        <div className="h-screen flex justify-center items-center">
+          <Contact />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import Hero from "@/pages/Hero";
 
 export default function Home() {
   return (
-    <div className="container mx-auto max-w-7xl">
+    <div className="container mx-auto max-w-7xl overflow-x-hidden">
       <Header />
       <Hero />
       <Testsection />
