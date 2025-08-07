@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="w-full flex gap-2">
+    <div className="w-full flex gap-2 justify-center items-center h-screen pl-3">
       <div className="flex-none">
         <Image
           src="/girl.png"

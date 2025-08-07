@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div>
+    <div className="justify-center items-center h-screen pl-3">
       <h1 className="text-4xl font-medium mb-4">Education</h1>
       <div className="flex gap-3">
         {/* card 1 */}
-        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35">
+        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35 hover:scale-105 transition-transform duration-300">
           <div className="pt-3 pl-1.5">
             <h3 className="text-2xl pb-2">
               BSc (Hons) in IT <br />
@@ -28,7 +28,7 @@ export default function Education() {
             />
           </div>
         </div>
-        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35">
+        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35 hover:scale-105 transition-transform duration-300">
           <div className="pt-3 pl-1.5">
             <h3 className="text-2xl pb-2">
               G.C.E. Advanced Level <br />
