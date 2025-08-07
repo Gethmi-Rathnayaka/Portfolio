@@ -1,5 +1,4 @@
 "use client";
-import Testsection from "@/components/testsection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/pages/Hero";

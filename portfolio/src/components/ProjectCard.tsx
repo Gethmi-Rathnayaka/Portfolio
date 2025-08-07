@@ -20,18 +20,12 @@ export default function ProjectCard({
   live,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-white/30 backdrop-blur-none rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div>
-            <Image
-        src="/bloodlink.webp"
-        alt={title}
-        width={400}
-        height={150}
-        className="rounded-xl"
-      />
+           <img src="/bloodlink.webp" alt={title} className="h-20 w-30" />
         </div>
       
-      {/* <img src={imageUrl} alt={title} className="" /> */}
+      
 
       <div className="">
         <div className="">
