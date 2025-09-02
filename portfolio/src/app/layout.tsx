@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Quantico } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
+import "nes.css/css/nes.min.css";
 
-const quantico = Quantico({
-  variable: "--font-quantico",
+const pressStart = Press_Start_2P({
+  variable: "--font-press-start",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400",
   display: "swap",
 });
 
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quantico.variable}  antialiased bg-black text-white`}>
+      <body
+        className={`${pressStart.variable}  antialiased bg-black text-white`}
+      >
         {children}
       </body>
     </html>
