@@ -11,7 +11,7 @@ import Contact from "@/pages/Contact";
 
 export default function Home() {
   return (
-    <div className="container mx-auto max-w-7xl overflow-x-hidden">
+    <div className="container mx-auto max-w-7xl overflow-hidden">
       <Header />
       <Hero />
       <About />

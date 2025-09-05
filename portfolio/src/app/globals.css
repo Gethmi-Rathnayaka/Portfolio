@@ -1,97 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #1e0f49;
-} */
+@import "tailwindcss";
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* Font variables */
   --font-press-start: "Press Start 2P", monospace;
   --font-sans: var(--font-press-start);
-  /* --backgroundColor: linear-gradient(
-  135deg,
-  #dbefff,
-  #799ede,
-  #6ba1fd,
-  #b2e4f2,
-  #c9e3f4
-); */
---backgroundColor: linear-gradient(
-  135deg,
-  #0f0c29,
-  #302b63,
-  #24243e
-);
-
-
-  --primaryColor: #3bccf8;
-  --primarytTextColor: #e6e6e6;
-
-  --headlineBig: clamp(5rem, 9.9vw, 15rem);
-  --headlineMedium: clamp(1rem, 2vw, 4rem);
-  --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
-  --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
 }
 
-
-
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: #1e0f49;
-    --foreground: #ffffff;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
 body {
-  background: var(--backgroundColor);
-  font-family: var(--font-sans, Arial), sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: url("/bg5.jpeg") repeat, linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: var(--font-sans);
 }
 
-html, body {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
-#hero-card {
-  margin: 30px;
-  background: rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(4.6px);
--webkit-backdrop-filter: blur(4.6px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
- box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
+::-webkit-scrollbar {
+  display: none;
 }
-
-#hero-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
-}
-
-#hero-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.8),
-    transparent,
-    rgba(255, 255, 255, 0.3)
-  );
-}
-

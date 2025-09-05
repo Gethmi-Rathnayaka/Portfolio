@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${pressStart.variable}  antialiased bg-black text-white`}
+        className={`${pressStart.variable}  antialiased  text-black leading-relaxed`}
       >
         {children}
       </body>

@@ -3,17 +3,17 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div className="justify-center items-center h-screen pl-3">
-      <h1 className="text-4xl font-medium mb-4">Education</h1>
-      <div className="flex gap-3">
+    <div className="justify-center items-center h-screen pl-3 mt-20">
+      <h1 className="text-4xl font-medium text-black mb-15">Education</h1>
+      <div className="flex flex-col items-center gap-6">
         {/* card 1 */}
-        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35 hover:scale-105 transition-transform duration-300">
+        <div className="ml-70 flex bg-blue-400 p-1 w-[60%]  hover:shadow-[0_0_20px_#00f] transition-transform duration-300 nes-container is-rounded">
           <div className="pt-3 pl-1.5">
-            <h3 className="text-2xl pb-2">
+            <h3 className="text-xl pb-2">
               BSc (Hons) in IT <br />
               (CGPA:3.80)
             </h3>
-            <p className="text-neutral-200">
+            <p className="text-neutral-200 text-sm">
               Currently a third year undergraduate
               <br /> of University of Moratuwa.
             </p>
@@ -28,13 +28,14 @@ export default function Education() {
             />
           </div>
         </div>
-        <div className="flex bg-linear-to-bl from-cyan-700 via-blue-500 to-blue-900 p-1 rounded-md h-20 w-35 hover:scale-105 transition-transform duration-300">
+        <span className="text-3xl">⬇️</span>
+        <div className="flex bg-blue-400 p-1 w-[60%] hover:shadow-[0_0_20px_#00f] transition-transform duration-300 nes-container is-rounded">
           <div className="pt-3 pl-1.5">
-            <h3 className="text-2xl pb-2">
-              G.C.E. Advanced Level <br />
+            <h3 className="text-xl pb-2">
+              G.C.E. Advanced Level 
               (2AB)
             </h3>
-            <p className="text-neutral-200">
+            <p className="text-neutral-200 text-sm">
               Graduated from Sujatha Vidyalaya Matara
               <br /> in Biological Science Stream.
             </p>
